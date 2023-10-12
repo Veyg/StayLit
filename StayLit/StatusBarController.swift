@@ -15,8 +15,8 @@ class StatusBarController {
 
     init() {
         statusBar = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
-        statusBar?.button?.image = NSImage(systemSymbolName: "moon.fill", accessibilityDescription: nil)
-        
+        statusBar?.button?.image = NSImage(systemSymbolName: "eye.slash.fill", accessibilityDescription: nil)
+
         let menu = NSMenu()
 
         let enableItem = NSMenuItem(title: "Enable", action: #selector(toggleSleep), keyEquivalent: "")
@@ -41,15 +41,16 @@ class StatusBarController {
                                         IOPMAssertionLevel(kIOPMAssertionLevelOn),
                                         "Prevent Sleep" as CFString,
                                         &assertionID)
-            statusBar?.button?.image = NSImage(systemSymbolName: "sun.max.fill", accessibilityDescription: nil) // Sun icon when on
+            statusBar?.button?.image = NSImage(systemSymbolName: "eye.fill", accessibilityDescription: nil) // Eye open when on
             statusBar?.button?.title = "On"
         } else {
             IOPMAssertionRelease(assertionID)
             assertionID = 0
-            statusBar?.button?.image = NSImage(systemSymbolName: "moon.fill", accessibilityDescription: nil) // Moon icon when off
+            statusBar?.button?.image = NSImage(systemSymbolName: "eye.slash.fill", accessibilityDescription: nil) // Eye closed when off
             statusBar?.button?.title = "Off"
         }
     }
+
     @objc func quitApp() {
         NSApplication.shared.terminate(nil)
     }
