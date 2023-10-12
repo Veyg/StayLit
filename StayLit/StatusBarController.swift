@@ -16,25 +16,30 @@ class StatusBarController {
     init() {
         statusBar = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         statusBar?.button?.image = NSImage(systemSymbolName: "eye.slash.fill", accessibilityDescription: nil)
+        updateMenu()
+    }
 
+    private func updateMenu() {
         let menu = NSMenu()
 
-        let enableItem = NSMenuItem(title: "Enable", action: #selector(toggleSleep), keyEquivalent: "")
-        enableItem.target = self
-        menu.addItem(enableItem)
-
-        let disableItem = NSMenuItem(title: "Disable", action: #selector(toggleSleep), keyEquivalent: "")
-        disableItem.target = self
-        menu.addItem(disableItem)
+        if assertionID == 0 {
+            let enableItem = NSMenuItem(title: "Enable", action: #selector(toggleSleep), keyEquivalent: "")
+            enableItem.target = self
+            menu.addItem(enableItem)
+        } else {
+            let disableItem = NSMenuItem(title: "Disable", action: #selector(toggleSleep), keyEquivalent: "")
+            disableItem.target = self
+            menu.addItem(disableItem)
+        }
 
         menu.addItem(NSMenuItem.separator())
-
         let quitItem = NSMenuItem(title: "Quit", action: #selector(quitApp), keyEquivalent: "q")
         quitItem.target = self
         menu.addItem(quitItem)
 
         statusBar?.menu = menu
     }
+
     @objc func toggleSleep() {
         if assertionID == 0 {
             IOPMAssertionCreateWithName(kIOPMAssertionTypeNoDisplaySleep as CFString,
@@ -49,10 +54,11 @@ class StatusBarController {
             statusBar?.button?.image = NSImage(systemSymbolName: "eye.slash.fill", accessibilityDescription: nil) // Eye closed when off
             statusBar?.button?.title = "Off"
         }
+
+        updateMenu() // Refresh the menu items
     }
 
     @objc func quitApp() {
         NSApplication.shared.terminate(nil)
     }
-
 }

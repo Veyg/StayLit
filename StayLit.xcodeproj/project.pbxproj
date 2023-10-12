@@ -12,9 +12,6 @@
 		63852B902AD7DC99008B9103 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63852B8F2AD7DC99008B9103 /* ContentView.swift */; };
 		63852B922AD7DC9B008B9103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63852B912AD7DC9B008B9103 /* Assets.xcassets */; };
 		63852B952AD7DC9B008B9103 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63852B942AD7DC9B008B9103 /* Preview Assets.xcassets */; };
-		63852BA02AD7DC9B008B9103 /* StayLitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63852B9F2AD7DC9B008B9103 /* StayLitTests.swift */; };
-		63852BAA2AD7DC9B008B9103 /* StayLitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63852BA92AD7DC9B008B9103 /* StayLitUITests.swift */; };
-		63852BAC2AD7DC9B008B9103 /* StayLitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63852BAB2AD7DC9B008B9103 /* StayLitUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +40,7 @@
 		63852B942AD7DC9B008B9103 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		63852B962AD7DC9B008B9103 /* StayLit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StayLit.entitlements; sourceTree = "<group>"; };
 		63852B9B2AD7DC9B008B9103 /* StayLitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StayLitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63852B9F2AD7DC9B008B9103 /* StayLitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayLitTests.swift; sourceTree = "<group>"; };
 		63852BA52AD7DC9B008B9103 /* StayLitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StayLitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63852BA92AD7DC9B008B9103 /* StayLitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayLitUITests.swift; sourceTree = "<group>"; };
-		63852BAB2AD7DC9B008B9103 /* StayLitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayLitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				63852B8C2AD7DC99008B9103 /* StayLit */,
-				63852B9E2AD7DC9B008B9103 /* StayLitTests */,
-				63852BA82AD7DC9B008B9103 /* StayLitUITests */,
 				63852B8B2AD7DC99008B9103 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,23 +105,6 @@
 				63852B942AD7DC9B008B9103 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		63852B9E2AD7DC9B008B9103 /* StayLitTests */ = {
-			isa = PBXGroup;
-			children = (
-				63852B9F2AD7DC9B008B9103 /* StayLitTests.swift */,
-			);
-			path = StayLitTests;
-			sourceTree = "<group>";
-		};
-		63852BA82AD7DC9B008B9103 /* StayLitUITests */ = {
-			isa = PBXGroup;
-			children = (
-				63852BA92AD7DC9B008B9103 /* StayLitUITests.swift */,
-				63852BAB2AD7DC9B008B9103 /* StayLitUITestsLaunchTests.swift */,
-			);
-			path = StayLitUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63852BA02AD7DC9B008B9103 /* StayLitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63852BAA2AD7DC9B008B9103 /* StayLitUITests.swift in Sources */,
-				63852BAC2AD7DC9B008B9103 /* StayLitUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
