@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63414D8D2AD7E21C00696CE7 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63414D8C2AD7E21C00696CE7 /* StatusBarController.swift */; };
 		63852B8E2AD7DC99008B9103 /* StayLitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63852B8D2AD7DC99008B9103 /* StayLitApp.swift */; };
 		63852B902AD7DC99008B9103 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63852B8F2AD7DC99008B9103 /* ContentView.swift */; };
 		63852B922AD7DC9B008B9103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63852B912AD7DC9B008B9103 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63414D8C2AD7E21C00696CE7 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		63852B8A2AD7DC99008B9103 /* StayLit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StayLit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63852B8D2AD7DC99008B9103 /* StayLitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayLitApp.swift; sourceTree = "<group>"; };
 		63852B8F2AD7DC99008B9103 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				63852B8D2AD7DC99008B9103 /* StayLitApp.swift */,
+				63414D8C2AD7E21C00696CE7 /* StatusBarController.swift */,
 				63852B8F2AD7DC99008B9103 /* ContentView.swift */,
 				63852B912AD7DC9B008B9103 /* Assets.xcassets */,
 				63852B962AD7DC9B008B9103 /* StayLit.entitlements */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63852B902AD7DC99008B9103 /* ContentView.swift in Sources */,
+				63414D8D2AD7E21C00696CE7 /* StatusBarController.swift in Sources */,
 				63852B8E2AD7DC99008B9103 /* StayLitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
