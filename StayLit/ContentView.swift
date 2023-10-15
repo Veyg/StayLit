@@ -1,9 +1,3 @@
-//
-//  ContentView.swift
-//  StayLit
-//
-//  Created by Dawid Grochowski on 12/10/2023.
-//
 import SwiftUI
 import LaunchAtLogin
 
@@ -53,7 +47,7 @@ struct ContentView: View {
                 VStack(alignment: .leading, spacing: 10) {
                     Button(action: {
                         // Open website
-                        if let url = URL(string: "https://yourwebsite.com") {
+                        if let url = URL(string: "https://veyg.me") {
                             NSWorkspace.shared.open(url)
                         }
                     }) {
@@ -63,7 +57,7 @@ struct ContentView: View {
 
                     Button(action: {
                         // Open donation link
-                        if let url = URL(string: "https://yourdonationlink.com") {
+                        if let url = URL(string: "https://www.buymeacoffee.com/veyg") {
                             NSWorkspace.shared.open(url)
                         }
                     }) {

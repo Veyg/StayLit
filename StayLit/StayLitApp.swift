@@ -25,5 +25,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     func applicationDidFinishLaunching(_ notification: Notification) {
         statusBarController = StatusBarController()
+        
+        if let window = NSApplication.shared.windows.first{
+            window.styleMask.remove(.resizable)
+            window.setContentSize(NSSize(width: 400, height: 500))
+        }
     }
 }
